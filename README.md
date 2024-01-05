@@ -1,12 +1,29 @@
-// como levantarlo :
+# [BACKEND BALAK]
 
-1. necesitas tener instalado docker (googlea :D)
-2. Necesitas tenerlo abierto
-3. docker-compose build (si te da problemas de permiso -> sudo docker-compose build) // esto construye la imagen
-4. docker-compose up -d // esto levanta la imagen
+## Cómo Levantarlo
 
-   ve a http://localhost:8000/
+Para ejecutar este proyecto, sigue estos pasos:
 
-   swagger en http://localhost:8000/docs
+1. **Instalación de Docker:**
+   Asegúrate de tener Docker instalado.
 
-   // en swagger puedes probar las llamadas
+2. **Docker levantado:**
+   Asegúrate de que Docker esté en ABIERTO [MAC] windows no se .
+
+3. **Construir la Imagen:**
+   Ejecuta el siguiente comando para construir la imagen del proyecto. Si encuentras problemas de permisos, utiliza `sudo`.
+
+   ```bash
+   docker-compose build
+   ```
+
+   y ahora esto para levantarlo
+
+   ```bash
+   docker-compose up -d
+   ```
+
+   En la app de docker vas a encontrar la bd y la api levantadas
+
+   Puedes acceder a ella en http://localhost:8000/
+   Para la docu de SWAGGER puedes usar http://localhost:8000/docs
